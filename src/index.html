@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz App</title>
+  </head>
+  <body>
+    
+    <div class="container">
+      
+      <div id="start-quiz">
+        <h1>Start Quiz</h1>
+        <button class="button" id="start">Start</button>
+      </div>
+
+      <div id="restart-quiz">
+        <h1>You completed the quiz!</h1>
+        <p id="result-display"></p>
+        <button class="button" id="restart">Try Again</button>
+      </div>
+
+    </div>
+
+    <div class="modal">
+      <div class="modal__content">
+        <div class="question">
+          <h2 class="question__title" id="question-title"></h2>
+
+          <ul class="question__alternatives" id="question-alternatives">
+          </ul>
+
+          <div class="modal__footer">
+            <button class="button button--secondary" id="next" disabled>Next</button>
+            <p class="timer">Time Left <span class="timer__seconds" id="timer-seconds">15</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
